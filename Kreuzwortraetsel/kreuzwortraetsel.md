@@ -18,6 +18,19 @@ Geschlossen ist es jedoch nicht, denn ein Spieler kann jederzeit neben den Felde
 
 Und noch schlimmer: Für Kreuzworträtsel werden Referenzen auf Instanzen ausserhalb des Spiels benötigt, das ganze Kreuzworträtsel besteht aus Referenzen auf die Aussenwelt! Herrgott nochmal, wie soll man überhaupt ein Kreuzworträtsel lösen, geschweige denn kreieren, wenn man die Aussenwelt nicht kennt? Wären wir alles Höhlenmenschen, gäbe es so was wie Kreuzworträtsel überhaupt?
 
+## Notizen (Pädu von und zu Hundskopf)
+
+- Sid Meier: "A game is a series of interesing choices".
+    - Kreuzworträtsel: wenig Wahlmöglichkeiten (Fluss mit 'D-na-'), überhaupt nicht interessant
+- DeKoven: "no bearing on anything outside the game"
+    - Kreuzworträtsel: "Unter allen Einsendern des richtigen Lösungswortes wird eine Traumreise nach Schwäbisch Gmünd verlost."
+- McLuhan/Costikyan: games as form of art
+    - Kreuzworträtsel: "lat. für Schliessmuskel"
+- Malaby: "A game is a semibounded and socially legitimate domain of contrived contingency that generates interpretable outcomes."
+    - Kreuzworträtsel: "Postmoderner Dummschwätzer mit sechs Buchstaben"
+- Nachmanovitch: "Play is the free spirit of exploration, doing and being for its own pure joy."
+    - Kreuzworträtsel: das Gegenteil von alledem
+
 # Verteidigung: Warum sind Kreuzworträtsel ein Spiel?
 
 Es gibt _de facto_ keine allgemein anerkannte Definition für den Begriff "Spiel". Verschiedene Definitionen unterscheiden sich in wesentlichen Aspekten und widersprechen sich teilweise. Wenn man aus den verschiedenen Definitionen Teilaspekte herauspickt, kann man beliebig viele Argumente zusammentragen, warum ein Kreuzworträtsel ein Spiel sein soll, oder eben nicht. Aus diesem Grund _kann_ eine reine Auflistung von Eigenschaften von Spielen die Frage niemals zufriedenstellend beantworten.
