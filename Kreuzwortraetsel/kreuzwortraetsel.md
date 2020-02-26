@@ -59,10 +59,11 @@ Daraus folgt _ex facie_ unter Verwendung von Induktion und Deduktion gemäss der
 3. Ein Denkspiel ist ein Spiel
 4. Ein Kreuzworträtsel ist ein Spiel
 
-Es scheint somit logisch und naheliegend, das Kreuzworträtsel als Spiel zu verstehen. Des weiteren gilt _lex lata_ insbesondere auch aufgrund der fehlenden validen Argumente der Anklage der Grundsatz _in dubio pro reo_.
+Es scheint somit logisch und naheliegend, das Kreuzworträtsel als Spiel zu verstehen. Des weiteren gilt _lex lata_ insbesondere auch aufgrund der fehlenden validen Argumente der relativ _schmafu_ geführten Anklage der Rechtsgrundsatz _in dubio pro reo_.
 
 # Literaturverzeichnis
 
 - https://www.duden.de/rechtschreibung/Kreuzwortraetsel
 - https://www.duden.de/rechtschreibung/Raetsel
 - https://www.duden.de/rechtschreibung/synonym
+- https://www.duden.de/rechtschreibung/schmafu
