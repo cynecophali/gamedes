@@ -27,7 +27,7 @@ Dies wird schnell ersichtlich, wenn man die einzelnen Argumente der Anklage betr
 > "Nach Clark C. Abt ist ein Spiel eine Aktivität _zwischen zwei oder mehreren Entscheidungsträgern_."
 
 Gemäss der Auslegung der Anklage sind also _ipso jure_ alle Spiele mit Einzelspielermodus keine Spiele, weil nur der Spieler als Entscheidungsträger involviert ist.
-Somit wären also beispielsweise Videospiele wie _Breakout (1976)_, _Tetris (1984)_ und _Flappy Bird (2013)_ nicht als Spiele zu betrachten. Führt man das Argument der Anklage _ad absurdum_, dann wären auch _Super Mario Bros (1985)_ und _Grand Theft Auto (1997)_ und viele andere _ex nunc_ nicht mehr als Spiele zu betrachten, weil die (simulierten) Kontrahent ebenfalls _keine Entscheidungsträger_ sind, sondern lediglich von einem Menschen kreierte Hindernisse mit vorprogrammierten Verhaltensmustern.
+Somit wären also beispielsweise Videospiele wie _Breakout (1976)_, _Tetris (1984)_ und _Flappy Bird (2013)_ nicht als Spiele zu betrachten. Führt man das Argument der Anklage _ad absurdum_, dann wären auch _Super Mario Bros (1985)_ und _Grand Theft Auto (1997)_ und viele andere _ex nunc_ nicht mehr als Spiele zu betrachten, weil die (simulierten) Kontrahenten im Sinne der Anklage ebenfalls _keine Entscheidungsträger_ sind, sondern lediglich von einem Menschen kreierte Hindernisse mit vorprogrammierten Verhaltensmustern.
 
 Simulierte Kontrahenten sind im Prinzip nichts weiteres als Hindernisse in der Spielwelt, welche vom Spieler überwunden werden müssen und unterscheiden sich dahingehend _pari passu_ nicht wesentlich von den Feldern des Kreuzworträtsels.
 
