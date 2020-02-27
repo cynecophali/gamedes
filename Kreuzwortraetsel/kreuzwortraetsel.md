@@ -18,11 +18,13 @@ Geschlossen ist es jedoch nicht, denn ein Spieler kann jederzeit neben den Felde
 
 Und noch schlimmer: Für Kreuzworträtsel werden Referenzen auf Instanzen ausserhalb des Spiels benötigt, das ganze Kreuzworträtsel besteht aus Referenzen auf die Aussenwelt! Herrgott nochmal, wie soll man überhaupt ein Kreuzworträtsel lösen, geschweige denn kreieren, wenn man die Aussenwelt nicht kennt? Wären wir alles Höhlenmenschen, gäbe es so was wie Kreuzworträtsel überhaupt?
 
-## Notizen (Pädu von und zu Hundskopf)
+## Gegenüberstellung Kreuzworträtsel/Spiel 
+
+Stellt man das Kreuzworträtsel verschiedenen Spieledfinitionen gegenüber, wird schnell klar, dass es sich beim Kreuzworträtsel kaum um ein Spiel handeln kann:
 
 - Sid Meier: "A game is a series of interesing choices".
-    - Kreuzworträtsel: wenig Wahlmöglichkeiten (Fluss mit 'D-na-'), überhaupt nicht interessant
-- DeKoven: "no bearing on anything outside the game"
+    - Kreuzworträtsel: "Deutsche Bundeskanzlerin [mit sechs Buchstaben]"
+- DeKoven: "[a game has] no bearing on anything outside the game"
     - Kreuzworträtsel: "Unter allen Einsendern des richtigen Lösungswortes wird eine Traumreise nach Schwäbisch Gmünd verlost."
 - McLuhan/Costikyan: games as form of art
     - Kreuzworträtsel: "lat. für Schliessmuskel"
