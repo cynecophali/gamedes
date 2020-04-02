@@ -5,8 +5,8 @@ import logging
 from random import randint
 
 coin = {
-    0: 'Kopf',
-    1: 'Zahl',
+    0: 'Head',
+    1: 'Tails',
 }
 
 
@@ -19,7 +19,8 @@ def setup_logger(filename='debug.log'):
     logger = logging.getLogger()
     logger.setLevel(logging.DEBUG)
 
-    fh = logging.FileHandler(filename)
+    timestamp = datetime.now().strftime('%Y-%m-%dT%H.%M.%S')
+    fh = logging.FileHandler(f'{timestamp}_{filename}')
     ch = logging.StreamHandler()
 
     fh.setLevel(logging.DEBUG)
@@ -31,28 +32,59 @@ def setup_logger(filename='debug.log'):
     return logger
 
 
-def default_game(cash, bet, rounds):
-    now = datetime.now()
-    timestamp = now.strftime('%Y-%m-%dT%H.%M.%S')
-    logger = setup_logger(filename=f'default_game_{timestamp}.log')
-    logger.info(f'playing {rounds} rounds with {cash} cash and {bet} bets')
+def execute(gamefunc, cash, bet, rounds):
+    """General game function executor."""
+    logger = setup_logger(filename=f'{gamefunc.__name__}.log')
+    logger.info(f'playing {gamefunc.__name__} {rounds} rounds ' +
+                f'({cash} cash, {bet} bets)')
+    cash = gamefunc(cash, bet, rounds, logger)
+    logger.info(f'result: {cash}')
+    logger.handlers = []
 
+
+def default_game(cash, bet, rounds, logger):
+    """Default head/tails game."""
     for i in range(0, rounds):
         guess, guess_side = toss_coin()
         toss, toss_side = toss_coin()
-
         logger.debug(f'guess {guess_side}\ttoss {toss_side}')
-
         if guess == toss:
             cash += bet
         else:
             cash -= bet
+    return cash
 
-    logger.info(f'result: {cash}')
+
+def streak_game(cash, bet, rounds, logger):
+    """
+    A variant of the head/tails game with streaks.
+
+    If the user wins, and sets again on the same side, the amount of the win
+    is doubled.
+    """
+    streak_length = 0
+    last_guess = None
+    for i in range(0, rounds):
+        guess, guess_side = toss_coin()
+        toss, toss_side = toss_coin()
+        logger.debug(f'guess {guess_side}\ttoss {toss_side}')
+        if guess == toss:
+            if streak_length > 0 and guess == last_guess:
+                # same guess after a win: double win successfully
+                cash += bet * 2 ** streak_length
+            else:
+                cash += bet
+            streak_length += 1
+        else:
+            cash -= bet
+            streak_length = 0
+        last_guess = guess
+    return cash
 
 
 cash = 100.0
 bet = 1.0
 rounds = 100
 
-default_game(cash, bet, rounds)
+for game in [default_game, streak_game]:
+    execute(game, cash, bet, rounds)
