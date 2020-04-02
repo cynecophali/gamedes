@@ -2,7 +2,9 @@
 
 from datetime import datetime
 import logging
-from random import randint
+import random
+
+random.seed(datetime.now())
 
 coin = {
     0: 'Head',
@@ -11,7 +13,7 @@ coin = {
 
 
 def toss_coin():
-    key = randint(0, 1)
+    key = random.randint(0, 1)
     return (key, coin[key])
 
 
@@ -82,9 +84,46 @@ def streak_game(cash, bet, rounds, logger):
     return cash
 
 
+def punish_streak_game(cash, bet, rounds, logger):
+    """
+    A variant of the head/tails game with streaks.
+
+    If the user wins, and sets again on the same side, the amount of the win
+    is doubled.
+    """
+    streak_length = 0
+    loss_length = 0
+    last_guess = None
+    for i in range(0, rounds):
+        guess, guess_side = toss_coin()
+        toss, toss_side = toss_coin()
+        logger.debug(f'guess {guess_side}\ttoss {toss_side}')
+        if guess == toss:
+            if streak_length > 0 and guess == last_guess:
+                # same guess after a win: double win successfully
+                cash += bet * 2 ** streak_length
+            else:
+                cash += bet
+            streak_length += 1
+            loss_length = 0
+        else:
+            if loss_length > 0:
+                # successice loss: double loss
+                cash -= bet * 2 ** loss_length
+            else:
+                cash -= bet
+            streak_length = 0
+            loss_length += 1
+        last_guess = guess
+        if cash <= 0:
+            logger.info(f'player went bankrupt after {i} rounds')
+            return cash
+    return cash
+
+
 cash = 100.0
 bet = 1.0
 rounds = 100
 
-for game in [default_game, streak_game]:
+for game in [default_game, streak_game, punish_streak_game]:
     execute(game, cash, bet, rounds)
