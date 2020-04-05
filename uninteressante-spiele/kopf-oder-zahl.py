@@ -86,10 +86,13 @@ def streak_game(cash, bet, rounds, logger):
 
 def punish_streak_game(cash, bet, rounds, logger):
     """
-    A variant of the head/tails game with streaks.
+    A variant of the head/tails game with positive and negative streaks.
 
     If the user wins, and sets again on the same side, the amount of the win
     is doubled.
+
+    If the user looses multiple successive games, the loss is doubled for
+    every round, too.
     """
     streak_length = 0
     loss_length = 0
