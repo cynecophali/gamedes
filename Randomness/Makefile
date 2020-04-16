@@ -1,5 +1,5 @@
 PDF_PARAMS=-s --pdf-engine=xelatex -V documentclass=scrartcl -V papersize=a4 -V lang=de -V fontsize=11pt
-FONT_PARAMS=-V mainfont="Noto Serif" -V sansfont="Noto Sans" -V monofont="Noto Sans Mono"
+FONT_PARAMS=-V mainfont="Symbola" -V sansfont="DejaVu Sans" -V monofont="DejaVu Sans Mono"
 DATE=-V date="`date +'%d.%m.%Y'`"
 
 .PHONY: all clean

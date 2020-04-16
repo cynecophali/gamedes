@@ -31,6 +31,17 @@ $$ 36 - 5 = 31 $$
 
 Insgesamt gibt es $10$ positive und $21$ negative Kombinationen, siehe folgende Tabelle:
 
+| H\\P | 1   |  2  |  3  | 4   |  5  | 6   |
+| ---- | --- | --- | --- | --- | --- | --- |
+| 🐲   | ☠️  | ☠️  | ☠️  | ☠️  | ☠️  | ☠️  |
+|  2   | ☠️  | 🔂  | 💰  | 💰  | 💰  | 💰  |
+| 3    | ☠️  | ☠️  | 🔂  | 💰  | 💰  | 💰  |
+| 4    | ☠️  | ☠️  | ☠️  | 🔂  | 💰  | 💰  |
+| 5    | ☠️  | ☠️  | ☠️  | ☠️  | 🔂  | 💰  |
+| 6    | ☠️  | ☠️  | ☠️  | ☠️  | ☠️  | 🔂  |
+
+Daraus kann man einfach die erwarteten Gewinne ableiten:
+
 ```
    D  2  3  4  5  6
 1 -1 -1 -1 -1 -1 -1 = -6
@@ -42,9 +53,8 @@ Insgesamt gibt es $10$ positive und $21$ negative Kombinationen, siehe folgende 
                     = -1
 ```
 
-Das Spielen lohnt sich langfristig nicht.
-
-Der erwartete Gewinn pro Runde beträgt somit:
+Man sieht sofort: das Spielen lohnt sich langfristig nicht.
+Der erwartete Gewinn pro Runde beträgt:
 
 $$ \Bigg( \frac{10}{31} \cdot  2 \Bigg) - \Bigg( \frac{21}{31} \cdot  1 \Bigg)  = -0.\overline{032258064516129} $$
 
