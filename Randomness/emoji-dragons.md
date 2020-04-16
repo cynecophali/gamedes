@@ -37,4 +37,4 @@ Der erwartete Gewinn pro Runde beträgt somit:
 
 $$ \Bigg( \frac{10}{31} \cdot  2 \Bigg) - \Bigg( \frac{21}{31} \cdot  1 \Bigg)  = -0.\overline{032258064516129} $$
 
-Der erwartete Gewinn ist somit kleiner als der erwartete Gewinn beim _Nicht-Spielen_ ( $\approx 0$). Es sollte als _nicht_ gespielt werden.
+Der erwartete Gewinn ist somit kleiner als der erwartete Gewinn beim _Nicht-Spielen_ ( $\approx 0$). Es sollte also _nicht_ gespielt werden.
