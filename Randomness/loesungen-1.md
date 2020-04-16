@@ -4,7 +4,22 @@ subtitle: Randomness
 author: Maurin Donat Thalmann, Patrick Bucher, Pascal Kiser
 ---
 
-# Aufgabe 1
+# Aufgabe 1: Dragon Die
+
+## Regeln
+
+Wähle eine Zahl zwischen 1 und 6
+
+- Du hast 1W6
+- Das Haus hat einen Spezialwürfel [Drache, 2, 3, 4, 5, 6]
+- Beide würfeln
+- Die höhere Augenzahl gewinnt
+- ABER: Das Haus gewinnt immer, wenn es Drachen würfelt
+- Wenn Du gewinnst, bekommst Du CHF 2
+- Wenn das Haus gewinnt, verlierst Du CHF 1
+- (Bei Unentschieden wird der Wurf wiederholt)
+
+## Lösung
 
 Es gibt 36 mögliche Würfelkombinationen:
 
@@ -77,7 +92,56 @@ simulate 100000 times: outcome=-0.02963
 simulate 1000000 times: outcome=-0.02836
 ```
 
-# Aufgabe 2
+# Aufgabe 2: Chuck-a-Luck
+
+## Regeln
+
+- Wähle eine Zahl zwischen 1 und 6
+- Würfel 3W6
+- Für jeden Würfel, der Deine Zahl zeigt, verdienst Du CHF 1
+- Du kannst also mit einem Wurf 1, 2 oder 3 Franken gewinnen!
+- Falls kein Würfel die Zahl zeigt, verlierst Du CHF 1
+
+## Lösung
+
+Für dieses Spiel gibt es pro Runde genau vier Möglichkeiten:
+
+1. _Genau_ eine Zahl stimmt
+2. _Genau_ zwei Zahlen stimmen
+3. _Genau_ drei Zahlen stimmen
+4. _Keine_ Zahl stimmt.
+
+Der erste Fall hat drei Permutationen, weshalb wir die einzelnen Wahrscheinlichkeiten nochmals mit 3 multiplizieren:
+
+$$
+3 \cdot \frac{1}{6} \cdot \frac{5}{6} \cdot \frac{5}{6} = \frac{72}{216}
+$$
+
+Der zweite analog dazu:
+
+$$
+3 \cdot \frac{1}{6} \cdot \frac{1}{6} \cdot \frac{5}{6}  = \frac{25}{216}
+$$
+
+Beim dritten gibt aber nur eine Permutation:
+
+$$
+\frac{1}{6} \cdot \frac{1}{6} \cdot \frac{1}{6}  = \frac{1}{216} = 0.004\overline{629}
+$$
+
+Ebenso beim vierten Fall:
+
+$$
+\frac{5}{6} \cdot \frac{5}{6} \cdot \frac{5}{6}  = \frac{125}{216} = 0.578\overline{703}
+$$
+
+Nun kann man den erwarteten Gewinn folgendermassen berechnen:
+
+$$
+\Big(\frac{72}{216} \cdot 1 \Big) + \Big(\frac{15}{216} \cdot 2 \Big) +\Big(\frac{1}{216} \cdot 3 \Big) + \Big(\frac{125}{216} \cdot -1 \Big) =  -0.078\overline{703}
+$$
+
+Fazit: Auch dieses Spiel lohnt sich nicht.
 
 ## Simulation
 
