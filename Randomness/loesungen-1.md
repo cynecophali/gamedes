@@ -124,19 +124,19 @@ Für dieses Spiel gibt es pro Runde genau vier Möglichkeiten:
 Der erste Fall hat drei Permutationen, weshalb wir die einzelnen Wahrscheinlichkeiten nochmals mit 3 multiplizieren:
 
 $$
-3 \cdot \frac{1}{6} \cdot \frac{5}{6} \cdot \frac{5}{6} = \frac{72}{216}
+3 \cdot \frac{1}{6} \cdot \frac{5}{6} \cdot \frac{5}{6} = \frac{75}{216}
 $$
 
 Der zweite analog dazu:
 
 $$
-3 \cdot \frac{1}{6} \cdot \frac{1}{6} \cdot \frac{5}{6}  = \frac{25}{216}
+3 \cdot \frac{1}{6} \cdot \frac{1}{6} \cdot \frac{5}{6}  = \frac{15}{216}
 $$
 
 Beim dritten gibt aber nur eine Permutation:
 
 $$
-\frac{1}{6} \cdot \frac{1}{6} \cdot \frac{1}{6}  = \frac{1}{216} = 0.004\overline{629}
+\frac{1}{6} \cdot \frac{1}{6} \cdot \frac{1}{6}  = \frac{1}{216}
 $$
 
 Ebenso beim vierten Fall:
@@ -148,7 +148,7 @@ $$
 Nun kann man den erwarteten Gewinn folgendermassen berechnen:
 
 $$
-\Big(\frac{72}{216} \cdot 1 \Big) + \Big(\frac{15}{216} \cdot 2 \Big) +\Big(\frac{1}{216} \cdot 3 \Big) + \Big(\frac{125}{216} \cdot -1 \Big) =  -0.078\overline{703}
+\Big(\frac{75}{216} \cdot 1 \Big) + \Big(\frac{15}{216} \cdot 2 \Big) +\Big(\frac{1}{216} \cdot 3 \Big) + \Big(\frac{125}{216} \cdot -1 \Big) =  -0.078\overline{703}
 $$
 
 Fazit: Auch dieses Spiel lohnt sich nicht.
